@@ -24,7 +24,7 @@
         lat.innerText = position.coords.latitude;
         lng.innerText = position.coords.longitude;
         acc.innerText = position.coords.accuracy;
-        lnk.href = `http://www.google.com/maps/place/${position.coords.latitude},${position.coords.longitude}`
+        lnk.href = `http://www.google.com/maps/bylatlng/?lat=${position.coords.latitude}&lng=${position.coords.longitude}`
     }
 
     function geo_error() {
